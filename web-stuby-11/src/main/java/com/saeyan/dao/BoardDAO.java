@@ -138,7 +138,15 @@ public class BoardDAO {
 	}
 
 	public void updateBoard(BoardVO bVo) {
-		String sql = "update bboard set name=?, email=?, pass=?, " + "title=?, content=? where num=?";
+		System.out.println("updateBoard() --------------------");
+		System.out.println(bVo.getName());
+		System.out.println(bVo.getEmail());
+		System.out.println(bVo.getPass());
+		System.out.println(bVo.getTitle());
+		System.out.println(bVo.getContent());
+		System.out.println(bVo.getNum());
+		
+		String sql = "update bboard set name=?, email=?, pass=?, title=?, content=? where num=?";
 
 		Connection conn = null;
 		PreparedStatement pstmt = null;

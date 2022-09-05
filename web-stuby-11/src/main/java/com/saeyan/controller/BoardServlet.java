@@ -15,7 +15,7 @@ import com.saeyan.controller.action.Action;
 @WebServlet("/BoardServlet")
 public class BoardServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-
+	
 	/**
 	 * @see HttpServlet#HttpServlet()
 	 */
